@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — R.K. Facility & Man Power Services</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme / palette variables -->
+    <style>
+        :root {
+            --rk-black: #0b0b0b;
+            --rk-red: #c82333;
+            --rk-green: #198754;
+            --rk-blue: #0d6efd;
+            --rk-white: #ffffff;
+            --card-radius: 0.75rem;
+            --max-content-width: 1200px;
+        }
+
+        /* Page layout */
+        body {
+            background: #f8f9fa;
+            color: #111827;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        .container-lg {
+            max-width: var(--max-content-width);
+        }
+
+        /* Header brand */
+        .brand-title {
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            color: var(--rk-black);
+        }
+
+        .brand-sub {
+            font-size: 0.85rem;
+            color: var(--rk-blue);
+        }
+
+        /* Hero / intro */
+        .about-hero {
+            background: linear-gradient(180deg, rgba(13, 110, 253, 0.04), rgba(0, 0, 0, 0.01));
+            border-radius: 1rem;
+            padding: 2.25rem;
+        }
+
+        @media (min-width: 992px) {
+            .about-hero {
+                padding: 3.5rem;
+            }
+
+            .about-hero .display-6 {
+                font-size: 2.25rem;
+            }
+        }
+
+        /* Cards and sections */
+        .info-card {
+            border-radius: var(--card-radius);
+            box-shadow: 0 6px 18px rgba(13, 110, 253, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .team-photo {
+            width: 72px;
+            height: 72px;
+            border-radius: .5rem;
+            object-fit: cover;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 1.25rem;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 12px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(var(--rk-blue), var(--rk-red));
+            border-radius: 2px;
+            opacity: 0.12;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--rk-black);
+            color: var(--rk-white);
+            width: 100%;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Accessibility focus */
+        a:focus,
+        button:focus {
+            outline: 3px solid rgba(13, 110, 253, 0.14);
+            outline-offset: 3px;
+        }
+
+        /* Responsive tweaks */
+        @media (min-width: 1200px) {
+            :root {
+                --max-content-width: 1400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Skip link -->
+    <a class="visually-hidden-focusable btn btn-sm btn-primary position-fixed start-50 translate-middle-x"
+        href="#main-content" style="z-index:1050; top:8px;">
+        Skip to content
+    </a>
+
+    <!-- NAVBAR (same outline as home; Contact Now button removed) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="main.html"
+                    aria-label="R.K. Facility & Man Power Services home">
+                    <div class="rounded bg-dark d-flex align-items-center justify-content-center"
+                        style="width:56px;height:56px;">
+                        <span class="text-white fw-bold">RK</span>
+                    </div>
+                    <div class="ms-2">
+                        <div class="brand-title">R.K. Facility & Man Power Services</div>
+                        <div class="brand-sub">Reliable • Professional • Local</div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="main.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="main.html">All Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" class="container-lg my-5">
+
+        <!-- Intro / Hero -->
+        <section class="about-hero mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-6 fw-bold mb-3">About R.K. Facility & Man Power Services</h1>
+                    <p class="lead text-muted mb-3">We provide end-to-end facility management and manpower solutions
+                        across Bangalore with a focus on reliability, compliance and measurable outcomes. Our teams are
+                        trained, vetted and managed to deliver consistent service standards for residential, commercial
+                        and industrial clients.</p>
+
+                    <div class="d-flex gap-2 flex-wrap">
+                        <a class="btn btn-rk-primary btn-lg" href="contact.html">Get in touch</a>
+                        <a class="btn btn-outline-secondary btn-lg" href="main.html#catalog">View Services</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-none d-md-block">
+                    <div class="rounded-3 overflow-hidden shadow-sm">
+                        <img src="https://via.placeholder.com/1000x700.png?text=About+R.K.+Services"
+                            alt="About R.K. Facility Services" class="img-fluid w-100" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Overview -->
+        <section class="mb-5">
+            <div class="row g-4">
+                <div class="col-12 col-lg-8">
+                    <div class="p-4 info-card">
+                        <h3 class="h5 mb-3">Who we are</h3>
+                        <p class="text-muted">Founded with the goal of delivering dependable facility services, R.K.
+                            Facility & Man Power Services combines local knowledge with disciplined operations. We serve
+                            a diverse client base — from residential complexes and retail outlets to manufacturing units
+                            and corporate campuses. Our approach emphasizes safety, compliance, and continuous
+                            improvement.</p>
+
+                        <h4 class="h6 mt-4">Our approach</h4>
+                        <ul class="text-muted">
+                            <li>Structured onboarding and training for all staff.</li>
+                            <li>Site-specific SOPs and quality checklists.</li>
+                            <li>Transparent reporting and client communication.</li>
+                            <li>Focus on sustainability and responsible waste handling.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="p-4 info-card text-center">
+                        <h3 class="h6 mb-3">Quick facts</h3>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="p-3 bg-white rounded shadow-sm">
+                                    <div class="h4 mb-0 text-primary">120+</div>
+                                    <div class="small text-muted">Clients</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 bg-white rounded shadow-sm">
+                                    <div class="h4 mb-0 text-success">15</div>
+                                    <div class="small text-muted">Years</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 bg-white rounded shadow-sm mt-2">
+                                    <div class="h4 mb-0 text-danger">250+</div>
+                                    <div class="small text-muted">Staff</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 bg-white rounded shadow-sm mt-2">
+                                    <div class="h4 mb-0 text-info">10</div>
+                                    <div class="small text-muted">Services</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-rk-accent btn-sm mt-3" href="contact.html">Request a callback</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission / Vision -->
+        <section class="mb-5">
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <div class="p-4 info-card h-100">
+                        <h3 class="h6 mb-3">Our Mission</h3>
+                        <p class="text-muted mb-0">To deliver reliable, safe and cost-effective facility management and
+                            manpower services that enable our clients to operate smoothly while maintaining the highest
+                            standards of compliance and employee welfare.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="p-4 info-card h-100">
+                        <h3 class="h6 mb-3">Our Vision</h3>
+                        <p class="text-muted mb-0">To be the preferred partner for facility and manpower solutions in
+                            the region — known for integrity, operational excellence and measurable impact on client
+                            operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h3 class="h5 mb-0">Leadership & Team</h3>
+                <small class="text-muted">Experienced, trained and locally managed</small>
+            </div>
+
+            <div class="row g-3">
+                <!-- Team member 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="p-3 info-card h-100 d-flex gap-3">
+                        <img src="https://via.placeholder.com/150.png?text=MD" alt="Managing Director"
+                            class="team-photo">
+                        <div>
+                            <h4 class="h6 mb-1">Renuka</h4>
+                            <p class="small text-muted mb-1">Managing Director</p>
+                            <p class="small text-muted mb-0">Over 20 years in operations and workforce management.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team member 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="p-3 info-card h-100 d-flex gap-3">
+                        <img src="https://via.placeholder.com/150.png?text=Ops" alt="Operations Head"
+                            class="team-photo">
+                        <div>
+                            <h4 class="h6 mb-1">Operations Head</h4>
+                            <p class="small text-muted mb-1">Head of Operations</p>
+                            <p class="small text-muted mb-0">Leads training, quality and site supervision teams.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team member 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="p-3 info-card h-100 d-flex gap-3">
+                        <img src="https://via.placeholder.com/150.png?text=HR" alt="HR Manager" class="team-photo">
+                        <div>
+                            <h4 class="h6 mb-1">HR Manager</h4>
+                            <p class="small text-muted mb-1">HR & Compliance</p>
+                            <p class="small text-muted mb-0">Handles recruitment, payroll and statutory compliance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team member 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="p-3 info-card h-100 d-flex gap-3">
+                        <img src="https://via.placeholder.com/150.png?text=Safety" alt="Safety Officer"
+                            class="team-photo">
+                        <div>
+                            <h4 class="h6 mb-1">Safety Officer</h4>
+                            <p class="small text-muted mb-1">Safety & Training</p>
+                            <p class="small text-muted mb-0">Ensures site safety and training compliance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline / Milestones -->
+        <section class="mb-5">
+            <h3 class="h5 mb-3">Milestones</h3>
+            <div class="timeline">
+                <div class="mb-4">
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="rounded-circle bg-white border"
+                                style="width:24px;height:24px; display:flex; align-items:center; justify-content:center;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="6" fill="var(--rk-blue)" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="h6 mb-1">2010 — Company founded</h4>
+                            <p class="small text-muted mb-0">Started as a small local housekeeping and janitorial
+                                provider.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="rounded-circle bg-white border"
+                                style="width:24px;height:24px; display:flex; align-items:center; justify-content:center;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="6" fill="var(--rk-green)" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="h6 mb-1">2016 — Expanded services</h4>
+                            <p class="small text-muted mb-0">Added security, electrical maintenance and payroll services
+                                to our portfolio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="rounded-circle bg-white border"
+                                style="width:24px;height:24px; display:flex; align-items:center; justify-content:center;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="6" fill="var(--rk-red)" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="h6 mb-1">2022 — 100+ clients milestone</h4>
+                            <p class="small text-muted mb-0">Reached a major milestone serving over 100 active clients
+                                across Bangalore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications / Partners -->
+        <section class="mb-5">
+            <div class="row g-3 align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="p-4 info-card">
+                        <h3 class="h6 mb-3">Certifications & Compliance</h3>
+                        <p class="text-muted mb-0">We maintain statutory compliance for payroll, labour laws and safety
+                            standards. Our teams are trained on site safety, PPE usage and emergency response.
+                            Documentation and records are available on request for audits.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="p-4 info-card text-center">
+                        <h3 class="h6 mb-3">Trusted by</h3>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <img src="https://via.placeholder.com/120x40.png?text=Client+1" alt="Client 1"
+                                class="img-fluid">
+                            <img src="https://via.placeholder.com/120x40.png?text=Client+2" alt="Client 2"
+                                class="img-fluid">
+                            <img src="https://via.placeholder.com/120x40.png?text=Client+3" alt="Client 3"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-4 rounded-3 text-center mb-5"
+            style="background:linear-gradient(90deg, rgba(25,135,84,0.06), rgba(200,35,51,0.04));">
+            <div class="container">
+                <h4 class="mb-2">Want to partner with us?</h4>
+                <p class="text-muted mb-3">Tell us about your site and requirements — we’ll propose a tailored plan and
+                    quote.</p>
+                <a class="btn btn-rk-primary btn-lg" href="contact.html">Contact Us</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (full width, consistent with home) -->
+    <footer class="mt-5">
+        <div class="container-fluid py-4">
+            <div class="row gy-3 align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h5 class="fw-bold mb-1">R.K. Facility &amp; Man Power Services</h5>
+                    <p class="mb-1 small">&copy; <span id="year"></span> All Rights Reserved</p>
+                    <p class="small mb-0">
+                        365, Ground Floor, Kempakaru Maranna Layout,<br>
+                        Totadaguddadahalli, Bangalore - 560073
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <a class="text-decoration-none me-3 text-light" href="main.html">Home</a>
+                    <a class="text-decoration-none me-3 text-light" href="contact.html">Contact</a>
+                    <a class="text-decoration-none text-light" href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Small scripts -->
+    <script>
+        // Footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Ensure dropdowns initialize (helps if markup loaded before script)
+        document.querySelectorAll('[data-bs-toggle="dropdown"]').forEach(function (el) {
+            try { new bootstrap.Dropdown(el); } catch (e) { /* ignore if bootstrap not available */ }
+        });
+    </script>
+</body>
+
+</html>

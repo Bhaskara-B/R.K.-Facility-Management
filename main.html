@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>R.K. Facility & Man Power Services</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Favicons / Theme color -->
+    <meta name="theme-color" content="#0d6efd">
+
+    <!-- Minimal custom styles using the requested palette (Black, Red, Green, Blue, White) -->
+    <style>
+        :root {
+            --rk-black: #0b0b0b;
+            --rk-red: #c82333;
+            --rk-green: #198754;
+            --rk-blue: #0d6efd;
+            --rk-white: #ffffff;
+            --card-radius: 0.75rem;
+        }
+
+        /* Header / Brand */
+        .brand-title {
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            color: var(--rk-black);
+        }
+
+        .brand-sub {
+            font-size: 0.85rem;
+            color: var(--rk-blue);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(180deg, rgba(13, 110, 253, 0.06), rgba(0, 0, 0, 0.02));
+            border-radius: 1rem;
+            padding: 3rem;
+        }
+
+        /* Service cards */
+        .service-card {
+            border-radius: var(--card-radius);
+            overflow: hidden;
+            transition: transform .25s ease, box-shadow .25s ease;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(13, 110, 253, 0.08);
+        }
+
+        /* Image placeholder style */
+        .img-placeholder {
+            background: linear-gradient(135deg, rgba(13, 110, 253, 0.06), rgba(198, 35, 51, 0.03));
+            min-height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(11, 11, 11, 0.6);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* Accent buttons */
+        .btn-rk-primary {
+            background: var(--rk-blue);
+            border-color: var(--rk-blue);
+            color: var(--rk-white);
+        }
+
+        .btn-rk-accent {
+            background: var(--rk-red);
+            border-color: var(--rk-red);
+            color: var(--rk-white);
+        }
+
+        /* Footer */
+        footer {
+            background: #0f1720;
+            color: #e6eef8;
+            padding: 2rem 0;
+        }
+
+        /* Small responsive tweaks */
+        @media (max-width: 575.98px) {
+            .hero {
+                padding: 1.5rem;
+            }
+
+            .img-placeholder {
+                min-height: 120px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <!-- Skip link for accessibility -->
+    <a class="visually-hidden-focusable btn btn-sm btn-primary position-fixed start-50 translate-middle-x"
+        href="#main-content" style="z-index:1050; top:8px;">
+        Skip to content
+    </a>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="main.html">
+                    <div class="rounded bg-dark d-flex align-items-center justify-content-center"
+                        style="width:56px;height:56px;">
+                        <span class="text-white fw-bold">RK</span>
+                    </div>
+                    <div class="ms-2">
+                        <div class="brand-title">R.K. Facility & Man Power Services</div>
+                        <div class="brand-sub">Reliable • Professional • Local</div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link active" href="main.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="main.html#catalog">All Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main-content" class="container my-5">
+
+        <!-- HERO -->
+        <section class="hero mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-6 fw-bold">Trusted Facility & Manpower Solutions Across Bangalore</h1>
+                    <p class="lead text-muted">We deliver professional housekeeping, security, maintenance and staffing
+                        services so you can focus on what matters</p>
+                    <!-- CATALOG / SERVICES -->
+                    <section id="catalog" class="mb-5">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div>
+                                <h2 class="h4 mb-0">Our Services</h2>
+                                <p class="text-muted mb-0">Comprehensive facility management and manpower solutions
+                                    tailored to your needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="row g-4">
+                            <!-- 1 Housekeeping -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <article class="service-card bg-white">
+                                    <div class="img-placeholder">Housekeeping</div>
+                                    <div class="p-3">
+                                        <h3 class="h6">Housekeeping</h3>
+                                        <p class="small text-muted mb-3">Daily cleaning, deep cleans, and tailored
+                                            housekeeping plans for residential and commercial spaces.</p>
+                                        <a class="btn btn-sm btn-rk-accent w-100" href="contact.html">Contact Now</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 2 Janitorial Service -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <article class="service-card bg-white">
+                                    <div class="img-placeholder">Janitorial Service</div>
+                                    <div class="p-3">
+                                        <h3 class="h6">Janitorial Service</h3>
+                                        <p class="small text-muted mb-3">Professional janitorial teams for offices,
+                                            retail, and industrial facilities.</p>
+                                        <a class="btn btn-sm btn-rk-accent w-100" href="contact.html">Contact Now</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 3 Waste Management -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <article class="service-card bg-white">
+                                    <div class="img-placeholder">Waste Management</div>
+                                    <div class="p-3">
+                                        <h3 class="h6">Waste Management Service</h3>
+                                        <p class="small text-muted mb-3">Segregation, collection, and responsible
+                                            disposal solutions for all scales.</p>
+                                        <a class="btn btn-sm btn-rk-accent w-100" href="contact.html">Contact Now</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 4 Carpet Shampooing -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <article class="service-card bg-white">
+                                    <div class="img-placeholder">Carpet Shampooing</div>
+                                    <div class="p-3">
+                                        <h3 class="h6">Carpet Shampooing</h3>
+                                        <p class="small text-muted mb-3">Deep cleaning and stain removal using safe,
+                                            industry-grade methods.</p>
+                                        <a class="btn btn-sm btn-rk-accent w-100" href="contact.html">Contact Now</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 5 Pest Control -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <article class="service-card bg-white">
+                                    <div class="img-placeholder">Pest Control</div>
+                                    <div class="p-3">
+                                        <h3 class="h6">Pest Control Services</h3>
+                                        <p class="small text-muted mb-3">Safe and effective pest management for homes
+                                            and businesses.</p>
+                                        <a class="btn btn-sm btn-rk-accent w-100" href="contact.html">Contact Now</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 6 Production Support Staff -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <article class="service-card bg-white">
+                                    <div class="img-placeholder">Production Support</div>
+                                    <div class="p-3">
+                                        <h3 class="h6">Production Support Staff</h3>
+                                        <p class="small text-muted mb-3">Skilled temporary and permanent staff to
+                                            support production lines and operations.</p>
+                                        <a class="btn btn-sm btn-rk-accent w-100" href="contact.html">Contact Now</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 7 Payroll Management -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <article class="service-card bg-white">
+                                    <div class="img-placeholder">Payroll Management</div>
+                                    <div class="p-3">
+                                        <h3 class="h6">Payroll Management</h3>
+                                        <p class="small text-muted mb-3">Accurate payroll processing, statutory
+                                            compliance and timely disbursements.</p>
+                                        <a class="btn btn-sm btn-rk-accent w-100" href="contact.html">Contact Now</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 8 Control Staffing -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <article class="service-card bg-white">
+                                    <div class="img-placeholder">Control Staffing</div>
+                                    <div class="p-3">
+                                        <h3 class="h6">Control Staffing</h3>
+                                        <p class="small text-muted mb-3">Managed staffing solutions for shift control,
+                                            supervision and quality assurance.</p>
+                                        <a class="btn btn-sm btn-rk-accent w-100" href="contact.html">Contact Now</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 9 Security Services -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <article class="service-card bg-white">
+                                    <div class="img-placeholder">Security Services</div>
+                                    <div class="p-3">
+                                        <h3 class="h6">Security Services</h3>
+                                        <p class="small text-muted mb-3">Trained security personnel, access control and
+                                            site patrol services.</p>
+                                        <a class="btn btn-sm btn-rk-accent w-100" href="contact.html">Contact Now</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- 10 Electrical Maintenance -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <article class="service-card bg-white">
+                                    <div class="img-placeholder">Electrical Maintenance</div>
+                                    <div class="p-3">
+                                        <h3 class="h6">Electrical Maintenance Services</h3>
+                                        <p class="small text-muted mb-3">Routine checks, repairs and preventive
+                                            maintenance for electrical systems.</p>
+                                        <a class="btn btn-sm btn-rk-accent w-100" href="contact.html">Contact Now</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Script to auto-update year -->
+                    <script>
+                        document.getElementById('year').textContent = new Date().getFullYear();
+                    </script>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-5">
+        <div class="container-fluid py-4">
+            <div class="row gy-3 align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h5 class="fw-bold mb-1">R.K. Facility &amp; Man Power Services</h5>
+                    <p class="mb-1 small">&copy; <span id="year"></span> All Rights Reserved</p>
+                    <p class="small mb-0">
+                        365, Ground Floor, Kempakaru Maranna Layout,<br>
+                        Totadaguddadahalli, Bangalore - 560073
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <a class="text-decoration-none me-3 text-light" href="main.html">Home</a>
+                    <a class="text-decoration-none me-3 text-light" href="contact.html">Contact</a>
+                    <a class="text-decoration-none text-light" href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
